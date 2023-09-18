@@ -188,59 +188,75 @@ const transporter = nodemailer.createTransport({
 });
 
 app.post('/postEmail', (req, res) => {
+  // Проверяем, что req.body существует и содержит необходимые поля
   const { cartItems, formData } = req.body;
+  if (
+    !cartItems ||
+    !formData ||
+    !formData.firstName ||
+    !formData.lastName ||
+    !formData.phone ||
+    !formData.email ||
+    !formData.comment
+  ) {
+    return res.status(400).json({ message: 'Неправильный формат данных.' });
+  }
+
+  // Генерируем HTML для письма
   const formDataHTML = `
-  <h2>Данные о заказчике:</h2>
-  <div>
-    <div>Имя: ${formData.firstName}</div>
-    <div>Фамилия: ${formData.lastName}</div>
-    <div>Телефон: ${formData.phone}</div>
-    <div>Почта: ${formData.email}</div>
-    <div>Коментарий: ${formData.comment}</div>
-  </div>
+    <h2>Данные о заказчике:</h2>
+    <div>
+      <div>Имя: ${formData.firstName}</div>
+      <div>Фамилия: ${formData.lastName}</div>
+      <div>Телефон: ${formData.phone}</div>
+      <div>Почта: ${formData.email}</div>
+      <div>Комментарий: ${formData.comment}</div>
+    </div>
   `;
+
   const cartItemsHTML = `
-<h2>Данные о товарах:</h2>
-<table style="width: 100%; border-collapse: collapse;">
-    <thead>
+    <h2>Данные о товарах:</h2>
+    <table style="width: 100%; border-collapse: collapse;">
+      <thead>
         <tr>
-            <th style="border: 1px solid #000; border-radius: 10px;">Наименование</th>
-            <th style="border: 1px solid #000; border-radius: 10px;">Поставщик</th>
-            <th style="border: 1px solid #000; border-radius: 10px;">Артикул</th>
-            <th style="border: 1px solid #000; border-radius: 10px;">Количество</th>
-            <th style="border: 1px solid #000; border-radius: 10px;">Стоимость</th>
-            <th style="border: 1px solid #000; border-radius: 10px;">Стоимость за 1 шт.</th>
+          <th style="border: 1px solid #000; border-radius: 10px;">Наименование</th>
+          <th style="border: 1px solid #000; border-radius: 10px;">Поставщик</th>
+          <th style="border: 1px solid #000; border-radius: 10px;">Артикул</th>
+          <th style="border: 1px solid #000; border-radius: 10px;">Количество</th>
+          <th style="border: 1px solid #000; border-radius: 10px;">Стоимость</th>
+          <th style="border: 1px solid #000; border-radius: 10px;">Стоимость за 1 шт.</th>
         </tr>
-    </thead>
-    <tbody>
+      </thead>
+      <tbody>
         ${cartItems
           .map(
             (item) => `
             <tr>
-                <td style="border: 1px solid #000;">${item.title}</td>
-                <td style="border: 1px solid #000;text-align: center;">${item.id_prod}</td>
-                <td style="border: 1px solid #000;text-align: center;">${item.id}</td>
-                <td style="border: 1px solid #000;text-align: center;">${item.col}</td>
-                <td style="border: 1px solid #000;text-align: center;">${
-                  item.price * item.col
-                } руб.</td>
-                <td style="border: 1px solid #000;text-align: center;">${item.price} руб.</td>
+              <td style="border: 1px solid #000;">${item.title}</td>
+              <td style="border: 1px solid #000;text-align: center;">${item.id_prod}</td>
+              <td style="border: 1px solid #000;text-align: center;">${item.id}</td>
+              <td style="border: 1px solid #000;text-align: center;">${item.col}</td>
+              <td style="border: 1px solid #000;text-align: center;">${
+                item.price * item.col
+              } руб.</td>
+              <td style="border: 1px solid #000;text-align: center;">${item.price} руб.</td>
             </tr>
-        `,
+          `,
           )
           .join('')}
-    </tbody>
-</table>
-`;
+      </tbody>
+    </table>
+  `;
 
+  // Настройки для отправки письма
   const mailOptions = {
     from: 'BananaProduct@yandex.ru',
     to: 'zakaz@bananaadv.ru',
     subject: `Заказ от ${formData.firstName} ${formData.lastName}`,
-    html: `${formDataHTML}<br>${cartItemsHTML}`, // Используйте опцию html для вставки HTML-кода
+    html: `${formDataHTML}<br>${cartItemsHTML}`,
   };
 
-  // Отправьте письмо
+  // Отправка письма
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.error('Ошибка при отправке письма:', error);
