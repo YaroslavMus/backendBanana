@@ -1,89 +1,211 @@
 import express from 'express';
+import axios from 'axios';
 import cors from 'cors';
 import fs from 'fs';
+import xml2js from 'xml2js';
 import nodemailer from 'nodemailer';
-import portobelloRoutes from './src/routes/portobelloRoutes.js';
-import giftsRoutes from './src/routes/giftsRoutes.js';
 import config from './config.js';
-import { loadAllData } from './src/routes/commonRoutes.js';
-import { fetchApiGiftData } from './src/api/gifts.js';
-import { fetchApiPortobelloData } from './src/api/portobello.js';
-// murprecracenklybnuka
-// dxsmvvzuzedoenhm
+
 const app = express();
-
-let portobelloData;
-let giftData;
-
-async function cacheGiftData() {
-  try {
-    giftData = await fetchApiGiftData();
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: 'Ошибка при получении данных' });
-  }
-}
-// Асинхронная функция для кеширования portobelloData
-async function cachePortobelloData() {
-  try {
-    portobelloData = await fetchApiPortobelloData();
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: 'Ошибка при получении данных' });
-  }
-}
-
-// Вызывайте функции для инициализации кешей при запуске приложения
-cacheGiftData();
-cachePortobelloData();
-
-let lastUpdateTimestamp = Date.now();
-
-app.use((req, res, next) => {
-  const currentTime = Date.now();
-  if (currentTime - lastUpdateTimestamp > 30 * 60 * 1000) {
-    cacheGiftData();
-    cachePortobelloData();
-    lastUpdateTimestamp = currentTime;
-  }
-  next();
-});
-
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(portobelloRoutes);
-app.use(giftsRoutes);
+const apiUrlGifts = 'https://82648_xmlexport:mir111@api2.gifts.ru/export/v2/catalogue/stock.xml';
+const apiUrlPortobello =
+  'https://php-backend.portobello.ru/api/catalog-stocks-json/?apiKey=tsKTQ9cHiANmssx1UFt066KDKTDMOexwX3z4kGQX';
+const apiUrlPortobelloPrice =
+  'https://php-backend.portobello.ru/api/catalog-prices-json/?apiKey=tsKTQ9cHiANmssx1UFt066KDKTDMOexwX3z4kGQX';
 
-app.get('/portobelloData', (req, res) => {
-  res.send(portobelloData);
-});
-app.get('/giftData', (req, res) => {
-  res.send(giftData);
-});
-app.get('/mainProduct', (req, res) => {
-  const currentPage = parseInt(req.query.currentPage);
-  const itemsPerPage = parseInt(req.query.itemsPerPage);
-
-  res.send(loadAllData(portobelloData, giftData, currentPage, itemsPerPage));
-});
-app.get('/itemProduct', (req, res) => {
-  const itemProduct = req.query.itemID;
-  const idProd = req.query.idProd;
-  let foundElement;
-  if (idProd === 'gifts') {
-    foundElement = giftData.find((element) => element.article[0] === itemProduct);
-  } else if (idProd === 'port') {
-    foundElement = portobelloData.find((element) => element.article === itemProduct);
+function updateDataByIdPortobello(targetData, newData, prices) {
+  for (const newItem of newData) {
+    const indexToUpdate = targetData.findIndex((item) => item.product_id === newItem.productId);
+    if (indexToUpdate !== -1) {
+      targetData[indexToUpdate].stocks.quantity.mos = newItem.quantity;
+      targetData[indexToUpdate].stocks.available_quantity = newItem.availableQuantity;
+    }
   }
-  res.send(foundElement);
+  for (const newItemPrice of prices) {
+    const indexToUpdatePrices = targetData.findIndex(
+      (item) => item.product_id === newItemPrice.productId,
+    );
+    if (indexToUpdatePrices !== -1) {
+      targetData[indexToUpdatePrices].price.price = newItemPrice.price;
+      targetData[indexToUpdatePrices].price.discount_price = newItemPrice.discountPrice;
+    }
+  }
+}
+function updateDataById(targetData, newData) {
+  for (const newItem of newData) {
+    const indexToUpdate = targetData.findIndex((item) => item.product_id === newItem.product_id);
+    if (indexToUpdate !== -1) {
+      // Обновите нужные поля
+      targetData[indexToUpdate].stocks.quantity.mos = newItem.amount;
+      targetData[indexToUpdate].stocks.available_quantity = newItem.free;
+      targetData[indexToUpdate].price.discount_price = newItem.dealerprice;
+
+      // Проверяем наличие свойства attributes и size_code
+      if (
+        targetData[indexToUpdate].attributes &&
+        targetData[indexToUpdate].attributes.size_code &&
+        Array.isArray(targetData[indexToUpdate].attributes.size_code)
+      ) {
+        for (const itemProdSize of newData) {
+          const idProd = targetData[indexToUpdate].attributes.size_code.findIndex(
+            (item) => item.product_id === itemProdSize.product_id,
+          );
+          if (idProd !== -1) {
+            // Обновите нужные поля
+            targetData[indexToUpdate].attributes.size_code[idProd].amount = itemProdSize.amount;
+            targetData[indexToUpdate].attributes.size_code[idProd].free = itemProdSize.free;
+          }
+        }
+      }
+    }
+  }
+}
+
+async function fetchDataPortobello() {
+  try {
+    const response = await axios.get(apiUrlPortobello);
+    const responsePrices = await axios.get(apiUrlPortobelloPrice);
+
+    if (response.status === 200) {
+      response.data.stocks;
+      console.log('Данные из API apiUrlPortobello.ru успешно загружены.');
+      fs.readFile('./bd/portobello.json', 'utf8', (err, data) => {
+        if (err) {
+          console.error('Ошибка при чтении файла:', err);
+          return;
+        }
+        try {
+          const jsonObject = JSON.parse(data);
+          updateDataByIdPortobello(jsonObject, response.data.stocks, responsePrices.data.prices);
+          fs.writeFileSync('./bd/portobello_updated.json', JSON.stringify(jsonObject, null, 2));
+
+          console.log('Обновленные данные сохранены в файле: ./bd/portobello_updated.json');
+        } catch (error) {
+          console.error('Ошибка при парсинге JSON:', error);
+        }
+      });
+    } else {
+      console.error('Произошла ошибка при запросе данных:', response.status);
+    }
+  } catch (error) {
+    console.error('Произошла ошибка при запросе данных:', error);
+  }
+}
+// fetchDataPortobello();
+async function fetchData() {
+  const parser = new xml2js.Parser({
+    explicitArray: false,
+  });
+
+  try {
+    const response = await axios.get(apiUrlGifts);
+
+    if (response.status === 200) {
+      const xmlData = response.data;
+      const result = await new Promise((resolve, reject) => {
+        parser.parseString(xmlData, (error, result) => {
+          if (error) {
+            reject(error);
+          } else {
+            resolve(result);
+          }
+        });
+      });
+
+      console.log('Данные из API Gifts.ru успешно загружены.');
+      open = result.doct.stock;
+      fs.readFile('./bd/gifts2.json', 'utf8', (err, data) => {
+        if (err) {
+          console.error('Ошибка при чтении файла:', err);
+          return;
+        }
+        try {
+          const jsonObject = JSON.parse(data);
+          updateDataById(jsonObject, result.doct.stock);
+          fs.writeFileSync('./bd/gifts_updated.json', JSON.stringify(jsonObject, null, 2));
+
+          console.log('Обновленные данные сохранены в файле: ./bd/gifts_updated.json');
+        } catch (error) {
+          console.error('Ошибка при парсинге JSON:', error);
+        }
+      });
+    } else {
+      console.error('Произошла ошибка при запросе данных:', response.status);
+    }
+  } catch (error) {
+    console.error('Произошла ошибка при запросе данных:', error);
+  }
+}
+// fetchData();
+
+function findProductsInJSONFiles(file1Data, gifts, portobello) {
+  try {
+    const data1 = file1Data;
+    const data2 = [...gifts, ...portobello];
+    // Извлекаем массив "product" из первого JSON файла
+    console.log(data1);
+    const products = data1.product || [];
+
+    // Создаем пустой массив для хранения результатов поиска
+    const foundProducts = [];
+
+    // Проходим по каждому элементу массива "product"
+    for (const product of products) {
+      const productId = product.product;
+
+      // Выполняем поиск во втором JSON файле по атрибуту "id"
+      const foundProduct = data2.find((item) => item.product_id === String(productId));
+      if (foundProduct) {
+        foundProducts.push(foundProduct);
+      }
+    }
+
+    return foundProducts;
+  } catch (error) {
+    console.error('Произошла ошибка:', error);
+    return [];
+  }
+}
+
+app.get('/itemProduct', async (req, res) => {
+  const itemProduct = String(req.query.itemID);
+  let foundElement;
+
+  const dataPortobello = await fs.promises.readFile('./bd/portobello_updated.json', 'utf8');
+  const dataGift = await fs.promises.readFile('./bd/gifts_updated.json', 'utf8');
+
+  const jsonDataPortobello = JSON.parse(dataPortobello);
+  const jsonDataGift = JSON.parse(dataGift);
+
+  // Объявляем переменную dataBig и объединяем массивы
+  const dataBig = [...jsonDataPortobello, ...jsonDataGift];
+
+  foundElement = dataBig.find((element) => element.product_id === itemProduct);
+
+  // Проверка на foundElement перед отправкой ответа
+  if (foundElement) {
+    res.send(foundElement);
+  } else {
+    res.status(404).send('Элемент не найден'); // Отправляем код 404, если элемент не найден
+  }
 });
 app.get('/itemCategories', async (req, res) => {
   const clientAttribute = req.query.clientAttribute; // Получаем значение "uri" из запроса
+  const page = req.query.page ? parseInt(req.query.page) : 1; // Получаем номер страницы из запроса, по умолчанию 1
+  const perPage = req.query.perPage ? parseInt(req.query.perPage) : 10; // Количество элементов на странице, по умолчанию 10
+
   let foundElement;
-  const data = await fs.promises.readFile('tree.json', 'utf8');
+  const data = await fs.promises.readFile('./bd/catalogue.json', 'utf8');
+  const dataPortobello = await fs.promises.readFile('./bd/portobello_updated.json', 'utf8');
+  const dataGift = await fs.promises.readFile('./bd/gifts_updated.json', 'utf8');
+
   const jsonData = JSON.parse(data);
+  const jsonDataPortobello = JSON.parse(dataPortobello);
+  const jsonDataGift = JSON.parse(dataGift);
 
   function findElement(obj) {
     if (obj.uri === clientAttribute) {
@@ -100,40 +222,69 @@ app.get('/itemCategories', async (req, res) => {
     return null;
   }
   foundElement = findElement(jsonData);
-  function findProductsInJSONFiles(file1Data, gifts, portobello) {
-    try {
-      const data1 = file1Data;
 
-      const data2 = [...gifts, ...portobello];
-      // Извлекаем массив "product" из первого JSON файла
-      const products = data1.product || [];
+  // Фильтруем элементы, чтобы получить только те, которые находятся на текущей странице
+  const filteredProducts = findProductsInJSONFiles(foundElement, jsonDataGift, jsonDataPortobello);
 
-      // Создаем пустой массив для хранения результатов поиска
-      const foundProducts = [];
+  // Вычисляем общее количество страниц
+  const totalPageCount = Math.ceil(filteredProducts.length / perPage);
 
-      // Проходим по каждому элементу массива "product"
-      for (const product of products) {
-        const productId = product.product;
+  // Вычисляем начало и конец элементов для текущей страницы
+  const startIndex = (page - 1) * perPage;
+  const endIndex = startIndex + perPage;
 
-        // Выполняем поиск во втором JSON файле по атрибуту "id"
-        const foundProduct = data2.find((item) => item.id === String(productId));
-        if (foundProduct) {
-          foundProducts.push(foundProduct);
-        }
-      }
+  // Фильтруем элементы, чтобы получить только те, которые находятся на текущей странице
+  const productsOnPage = filteredProducts.slice(startIndex, endIndex);
 
-      return foundProducts;
-    } catch (error) {
-      console.error('Произошла ошибка:', error);
-      return [];
-    }
+  res.json({
+    currentPage: page,
+    perPage: perPage,
+    totalProducts: filteredProducts.length,
+    totalPageCount: totalPageCount, // Общее количество страниц
+    data: productsOnPage,
+  });
+});
+app.get('/itemCategoriesSearch', async (req, res) => {
+  const clientAttribute = req.query.searchItem;
+  const page = req.query.page ? parseInt(req.query.page) : 1; // Получаем номер страницы из запроса, по умолчанию 1
+  const perPage = req.query.perPage ? parseInt(req.query.perPage) : 10;
+
+  const dataPortobello = await fs.promises.readFile('./bd/portobello_updated.json', 'utf8');
+  const dataGift = await fs.promises.readFile('./bd/gifts_updated.json', 'utf8');
+
+  const jsonDataPortobello = JSON.parse(dataPortobello);
+  const jsonDataGift = JSON.parse(dataGift);
+
+  function search(itemPortobello, itemGift) {
+    const allItems = [...itemPortobello, ...itemGift];
+    return allItems.filter((item) =>
+      item.name.toLowerCase().includes(clientAttribute.toLowerCase()),
+    );
   }
-  res.json(findProductsInJSONFiles(foundElement, giftData, portobelloData));
+  const filteredProducts = search(jsonDataPortobello, jsonDataGift);
+
+  // Вычисляем общее количество страниц
+  const totalPageCount = Math.ceil(filteredProducts.length / perPage);
+
+  // Вычисляем начало и конец элементов для текущей страницы
+  const startIndex = (page - 1) * perPage;
+  const endIndex = startIndex + perPage;
+
+  // Фильтруем элементы, чтобы получить только те, которые находятся на текущей странице
+  const productsOnPage = filteredProducts.slice(startIndex, endIndex);
+
+  res.json({
+    currentPage: page,
+    perPage: perPage,
+    totalProducts: filteredProducts.length,
+    totalPageCount: totalPageCount, // Общее количество страниц
+    data: productsOnPage,
+  });
 });
 app.get('/categories', (req, res) => {
   try {
     // Прочитайте JSON-файл
-    fs.readFile('tree.json', 'utf8', (err, data) => {
+    fs.readFile('./bd/catalogue.json', 'utf8', (err, data) => {
       if (err) {
         // Обработка ошибки чтения файла
         res.status(500).json({ error: 'Ошибка при чтении файла' });
@@ -155,7 +306,6 @@ app.get('/categories', (req, res) => {
             if (obj.hasOwnProperty('product')) {
               delete obj.product;
             }
-
             // Рекурсивно вызываем функцию для всех свойств объекта
             for (const key in obj) {
               if (obj.hasOwnProperty(key)) {
@@ -176,6 +326,8 @@ app.get('/categories', (req, res) => {
     res.status(500).json({ error: 'Ошибка при удалении атрибута "product"' });
   }
 });
+
+//________________________________________________________________________//
 
 const transporter = nodemailer.createTransport({
   host: 'smtp.yandex.ru',
@@ -204,49 +356,49 @@ app.post('/postEmail', (req, res) => {
 
   // Генерируем HTML для письма
   const formDataHTML = `
-    <h2>Данные о заказчике:</h2>
-    <div>
-      <div>Имя: ${formData.firstName}</div>
-      <div>Фамилия: ${formData.lastName}</div>
-      <div>Телефон: ${formData.phone}</div>
-      <div>Почта: ${formData.email}</div>
-      <div>Комментарий: ${formData.comment}</div>
-    </div>
-  `;
+      <h2>Данные о заказчике:</h2>
+      <div>
+        <div>Имя: ${formData.firstName}</div>
+        <div>Фамилия: ${formData.lastName}</div>
+        <div>Телефон: ${formData.phone}</div>
+        <div>Почта: ${formData.email}</div>
+        <div>Комментарий: ${formData.comment}</div>
+      </div>
+    `;
 
   const cartItemsHTML = `
-    <h2>Данные о товарах:</h2>
-    <table style="width: 100%; border-collapse: collapse;">
-      <thead>
-        <tr>
-          <th style="border: 1px solid #000; border-radius: 10px;">Наименование</th>
-          <th style="border: 1px solid #000; border-radius: 10px;">Поставщик</th>
-          <th style="border: 1px solid #000; border-radius: 10px;">Артикул</th>
-          <th style="border: 1px solid #000; border-radius: 10px;">Количество</th>
-          <th style="border: 1px solid #000; border-radius: 10px;">Стоимость</th>
-          <th style="border: 1px solid #000; border-radius: 10px;">Стоимость за 1 шт.</th>
-        </tr>
-      </thead>
-      <tbody>
-        ${cartItems
-          .map(
-            (item) => `
-            <tr>
-              <td style="border: 1px solid #000;">${item.title}</td>
-              <td style="border: 1px solid #000;text-align: center;">${item.id_prod}</td>
-              <td style="border: 1px solid #000;text-align: center;">${item.id}</td>
-              <td style="border: 1px solid #000;text-align: center;">${item.col}</td>
-              <td style="border: 1px solid #000;text-align: center;">${
-                item.price * item.col
-              } руб.</td>
-              <td style="border: 1px solid #000;text-align: center;">${item.price} руб.</td>
-            </tr>
-          `,
-          )
-          .join('')}
-      </tbody>
-    </table>
-  `;
+      <h2>Данные о товарах:</h2>
+      <table style="width: 100%; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th style="border: 1px solid #000; border-radius: 10px;">Наименование</th>
+            <th style="border: 1px solid #000; border-radius: 10px;">Поставщик</th>
+            <th style="border: 1px solid #000; border-radius: 10px;">Артикул</th>
+            <th style="border: 1px solid #000; border-radius: 10px;">Количество</th>
+            <th style="border: 1px solid #000; border-radius: 10px;">Стоимость</th>
+            <th style="border: 1px solid #000; border-radius: 10px;">Стоимость за 1 шт.</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${cartItems
+            .map(
+              (item) => `
+              <tr>
+                <td style="border: 1px solid #000;">${item.title}</td>
+                <td style="border: 1px solid #000;text-align: center;">${item.id_prod}</td>
+                <td style="border: 1px solid #000;text-align: center;">${item.id}</td>
+                <td style="border: 1px solid #000;text-align: center;">${item.col}</td>
+                <td style="border: 1px solid #000;text-align: center;">${
+                  item.price * item.col
+                } руб.</td>
+                <td style="border: 1px solid #000;text-align: center;">${item.price} руб.</td>
+              </tr>
+            `,
+            )
+            .join('')}
+        </tbody>
+      </table>
+    `;
 
   // Настройки для отправки письма
   const mailOptions = {
@@ -272,15 +424,15 @@ app.post('/question', (req, res) => {
   const { name, email, phone, question, preferredContactMethod } = req.body;
 
   const formDataHTML = `
-  <h2>Данные о заказчике:</h2>
-  <div>
-    <div>Имя: ${name}</div>
-    <div>Почта: ${email}</div>
-    <div>Телефон: ${phone}</div>
-    <div>Предпочтительный способ связи: ${preferredContactMethod}</div>
-    <div>Комментарий: ${question}</div>
-  </div>
-  `;
+    <h2>Данные о заказчике:</h2>
+    <div>
+      <div>Имя: ${name}</div>
+      <div>Почта: ${email}</div>
+      <div>Телефон: ${phone}</div>
+      <div>Предпочтительный способ связи: ${preferredContactMethod}</div>
+      <div>Комментарий: ${question}</div>
+    </div>
+    `;
 
   const mailOptions = {
     from: 'BananaProduct@yandex.ru',
@@ -300,7 +452,6 @@ app.post('/question', (req, res) => {
     }
   });
 });
-
 app.listen(config.PORT, (error) => {
   if (error) {
     console.error('Ошибка при запуске сервера:', error);
