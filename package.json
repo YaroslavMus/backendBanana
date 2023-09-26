@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --max-old-space-size=4096 server.js"
+    "dev": "nodemon server.js"
   },
   "type": "module",
   "license": "ISC",
@@ -19,9 +19,6 @@
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "fs-extra": "^11.1.1",
-    "mongodb": "^5.7.0",
-    "mongoose": "^7.4.3",
-    "node-cache": "^5.1.2",
     "nodemailer": "^6.9.5",
     "xml2js": "^0.6.2"
   }
