@@ -4,6 +4,7 @@ import cors from 'cors';
 import fs from 'fs';
 import xml2js from 'xml2js';
 import nodemailer from 'nodemailer';
+import cron from 'node-cron';
 import config from './config.js';
 
 const app = express();
@@ -17,6 +18,7 @@ const apiUrlPortobello =
 const apiUrlPortobelloPrice =
   'https://php-backend.portobello.ru/api/catalog-prices-json/?apiKey=tsKTQ9cHiANmssx1UFt066KDKTDMOexwX3z4kGQX';
 
+// Запуск функции каждый день в определенное время (например, в 12:00)
 function updateDataByIdPortobello(targetData, newData, prices) {
   for (const newItem of newData) {
     const indexToUpdate = targetData.findIndex((item) => item.product_id === newItem.productId);
@@ -95,7 +97,6 @@ async function fetchDataPortobello() {
     console.error('Произошла ошибка при запросе данных:', error);
   }
 }
-// fetchDataPortobello();
 async function fetchData() {
   const parser = new xml2js.Parser({
     explicitArray: false,
@@ -140,15 +141,17 @@ async function fetchData() {
     console.error('Произошла ошибка при запросе данных:', error);
   }
 }
-// fetchData();
 
+function myDailyFunction() {
+  fetchDataPortobello();
+  fetchData();
+}
 function findProductsInJSONFiles(file1Data, gifts, portobello) {
   try {
     const data1 = file1Data;
     const data2 = [...gifts, ...portobello];
     // Извлекаем массив "product" из первого JSON файла
-    console.log(data1);
-    const products = data1.product || [];
+    const products = data1.product !== undefined ? data1.product : data1;
 
     // Создаем пустой массив для хранения результатов поиска
     const foundProducts = [];
@@ -222,11 +225,67 @@ app.get('/itemCategories', async (req, res) => {
     return null;
   }
   foundElement = findElement(jsonData);
-
   // Фильтруем элементы, чтобы получить только те, которые находятся на текущей странице
   const filteredProducts = findProductsInJSONFiles(foundElement, jsonDataGift, jsonDataPortobello);
 
   // Вычисляем общее количество страниц
+  const totalPageCount = Math.ceil(filteredProducts.length / perPage);
+
+  // Вычисляем начало и конец элементов для текущей страницы
+  const startIndex = (page - 1) * perPage;
+  const endIndex = startIndex + perPage;
+
+  // Фильтруем элементы, чтобы получить только те, которые находятся на текущей странице
+  const productsOnPage = filteredProducts.slice(startIndex, endIndex);
+
+  res.json({
+    currentPage: page,
+    perPage: perPage,
+    totalProducts: filteredProducts.length,
+    totalPageCount: totalPageCount, // Общее количество страниц
+    data: productsOnPage,
+  });
+});
+app.get('/productCategories', async (req, res) => {
+  const categoriesProduct = req.query.product;
+  const page = req.query.page ? parseInt(req.query.page) : 1; // Получаем номер страницы из запроса, по умолчанию 1
+  const perPage = req.query.perPage ? parseInt(req.query.perPage) : 10;
+
+  const data = await fs.promises.readFile('./bd/catalogue.json', 'utf8');
+  const dataPortobello = await fs.promises.readFile('./bd/portobello_updated.json', 'utf8');
+  const dataGift = await fs.promises.readFile('./bd/gifts_updated.json', 'utf8');
+
+  const jsonCategories = JSON.parse(data);
+  const jsonDataPortobello = JSON.parse(dataPortobello);
+  const jsonDataGift = JSON.parse(dataGift);
+
+  let itemProduct = jsonCategories.page.filter((item) => {
+    return item.uri === categoriesProduct;
+  });
+
+  function extractProducts(page) {
+    const products = page.product.map((product) => {
+      return {
+        page: page.page_id,
+        product: product.product,
+      };
+    });
+    return products;
+  }
+
+  function extractAllProducts(pages) {
+    const allProducts = pages.reduce((accumulator, page) => {
+      const products = extractProducts(page);
+      return accumulator.concat(products);
+    }, []);
+    return allProducts;
+  }
+
+  // Извлеките все продукты из всех страниц
+  const allProducts = extractAllProducts(itemProduct[0].page);
+
+  const filteredProducts = findProductsInJSONFiles(allProducts, jsonDataGift, jsonDataPortobello);
+
   const totalPageCount = Math.ceil(filteredProducts.length / perPage);
 
   // Вычисляем начало и конец элементов для текущей страницы
@@ -326,7 +385,6 @@ app.get('/categories', (req, res) => {
     res.status(500).json({ error: 'Ошибка при удалении атрибута "product"' });
   }
 });
-
 //________________________________________________________________________//
 
 const transporter = nodemailer.createTransport({
@@ -338,7 +396,6 @@ const transporter = nodemailer.createTransport({
     pass: 'dxsmvvzuzedoenhm', // Замените на пароль от вашей почты
   },
 });
-
 app.post('/postEmail', (req, res) => {
   // Проверяем, что req.body существует и содержит необходимые поля
   const { cartItems, formData } = req.body;
@@ -452,6 +509,7 @@ app.post('/question', (req, res) => {
     }
   });
 });
+cron.schedule('0 22 * * *', myDailyFunction);
 app.listen(config.PORT, (error) => {
   if (error) {
     console.error('Ошибка при запуске сервера:', error);
