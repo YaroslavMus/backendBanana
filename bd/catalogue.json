@@ -1,222 +1,222 @@
 {
   "page_id": "1",
   "name": "Каталог",
-  "uri": "catalog",
+  "url": "catalog",
   "page": [
     {
       "page_id": "1213423213",
       "name": "Полиграфия",
-      "uri": "polygraphy",
+      "url": "polygraphy",
       "dis": false,
       "img": "/assets/img/svg-icon/item10.svg",
       "page": [
         {
           "page_id": "1105697",
           "name": "Визитки",
-          "uri": "business-cards",
+          "url": "business-cards",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Бирки",
-          "uri": "tags",
+          "url": "tags",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Листовки / флаеры",
-          "uri": "leaflets-flyers",
+          "url": "leaflets-flyers",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Дорхенгеры",
-          "uri": "dorhengers",
+          "url": "dorhengers",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Бейджи",
-          "uri": "badges",
+          "url": "badges",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Ленты для бейджей",
-          "uri": "badge-ribbons",
+          "url": "badge-ribbons",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Открытки / Сертификаты / Грамоты",
-          "uri": "postcardscertificates-diplomas",
+          "url": "postcardscertificates-diplomas",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Буклеты (лифлеты)",
-          "uri": "booklets_leaflets",
+          "url": "booklets_leaflets",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Тайблтенты",
-          "uri": "tabletents",
+          "url": "tabletents",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Брошюры (каталоги/журналы)",
-          "uri": "brochures_catalogs_magazines",
+          "url": "brochures_catalogs_magazines",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Книги",
-          "uri": "books",
+          "url": "books",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Печать Меню",
-          "uri": "print_menu",
+          "url": "print_menu",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Блокноты",
-          "uri": "notepads",
+          "url": "notepads",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Квартальные /карманные календари",
-          "uri": "quarterly_pocket_calendars",
+          "url": "quarterly_pocket_calendars",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Фирменные бланки",
-          "uri": "letterhead",
+          "url": "letterhead",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Бумажные папки",
-          "uri": "paper_folders",
+          "url": "paper_folders",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Бумажные пакеты",
-          "uri": "paper_bags",
+          "url": "paper_bags",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Полиэтиленовые (ПВД) пакеты",
-          "uri": "polyethylene_PVD_bags",
+          "url": "polyethylene_PVD_bags",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Пакеты Zip-Lock С Бегунком",
-          "uri": "zip-lock_bags_with_slider",
+          "url": "zip-lock_bags_with_slider",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Конверты",
-          "uri": "envelopes",
+          "url": "envelopes",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Плакаты / Постеры",
-          "uri": "posters_posters",
+          "url": "posters_posters",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Наклейки / Стикерпаки",
-          "uri": "stickers_sticker_packs",
+          "url": "stickers_sticker_packs",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Пластиковые карты",
-          "uri": "plastic_cards",
+          "url": "plastic_cards",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Картхолдеры",
-          "uri": "cardholders",
+          "url": "cardholders",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Бумажные стаканчики",
-          "uri": "paper_cups",
+          "url": "paper_cups",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Бумажные браслеты",
-          "uri": "paper_bracelets",
+          "url": "paper_bracelets",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Пазлы",
-          "uri": "puzzles",
+          "url": "puzzles",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Кубарики",
-          "uri": "kubariki",
+          "url": "kubariki",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Коробки",
-          "uri": "boxes",
+          "url": "boxes",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Печать чертежей и проектной документации",
-          "uri": "printing_drawings_and_project_documentation",
+          "url": "printing_drawings_and_project_documentation",
           "product": [],
           "_parent_page_id": "1104129"
         }
@@ -225,140 +225,140 @@
     {
       "page_id": "12132142133",
       "name": "Рекламная продукция",
-      "uri": "promotional_products",
+      "url": "promotional_products",
       "dis": false,
       "img": "/assets/img/svg-icon/item13.svg",
       "page": [
         {
           "page_id": "1105697",
           "name": "Пластиковые бейджи",
-          "uri": "plastic_badges",
+          "url": "plastic_badges",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Пластиковых пломбы",
-          "uri": "plastic_seals",
+          "url": "plastic_seals",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Шильды",
-          "uri": "shields",
+          "url": "shields",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Таблички",
-          "uri": "tablets",
+          "url": "tablets",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Автомобильные рамки",
-          "uri": "car_frames",
+          "url": "car_frames",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Фальшномера",
-          "uri": "false_numbers",
+          "url": "false_numbers",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Стенды",
-          "uri": "stands",
+          "url": "stands",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Вывески",
-          "uri": "signboards",
+          "url": "signboards",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Штендеры",
-          "uri": "pillars",
+          "url": "pillars",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Холсты",
-          "uri": "canvases",
+          "url": "canvases",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Баннеры",
-          "uri": "banners",
+          "url": "banners",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Плоттерная резка",
-          "uri": "plotter_cutting",
+          "url": "plotter_cutting",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Ролл-апы",
-          "uri": "roll_ups",
+          "url": "roll_ups",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Пресволлы",
-          "uri": "preswolls",
+          "url": "preswolls",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Промостойки",
-          "uri": "promo_stands",
+          "url": "promo_stands",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Ростовые фигуры",
-          "uri": "growth_figures",
+          "url": "growth_figures",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Флаги",
-          "uri": "flags",
+          "url": "flags",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Этикетки",
-          "uri": "labels",
+          "url": "labels",
           "product": [],
           "_parent_page_id": "1104129"
         },
         {
           "page_id": "1105697",
           "name": "Печати / штампы / факсимиле",
-          "uri": "seals_stamps_facsimile",
+          "url": "seals_stamps_facsimile",
           "product": [],
           "_parent_page_id": "1104129"
         }
@@ -371,7 +371,7 @@
       "page_id": "1104129",
       "name": "Одежда и головные уборы",
       "img": "/assets/img/svg-icon/item5.svg",
-      "uri": "odejda",
+      "url": "odejda",
       "page": [
         {
           "$": {
@@ -379,7 +379,7 @@
           },
           "page_id": "1111958",
           "name": "Худи ",
-          "uri": "hudi-s-printom",
+          "url": "hudi-s-printom",
           "product": [
             {
               "page": "1111958",
@@ -481,7 +481,7 @@
           },
           "page_id": "1110649",
           "name": "Бейсболки и панамы ",
-          "uri": "beysbolki-i-panamy-s-printom",
+          "url": "beysbolki-i-panamy-s-printom",
           "product": [
             {
               "page": "1110649",
@@ -539,7 +539,7 @@
           },
           "page_id": "1110462",
           "name": "Вязаные пледы с оригинальным рисунком",
-          "uri": "pledy-s-originalnym-risunkom",
+          "url": "pledy-s-originalnym-risunkom",
           "product": [
             {
               "page": "1110462",
@@ -601,7 +601,7 @@
           },
           "page_id": "1111003",
           "name": "Шапки ",
-          "uri": "shapki-s-printom",
+          "url": "shapki-s-printom",
           "product": [
             {
               "page": "1111003",
@@ -695,7 +695,7 @@
           },
           "page_id": "1110647",
           "name": "Детские футболки ",
-          "uri": "detskie-futbolki-s-printom",
+          "url": "detskie-futbolki-s-printom",
           "product": [
             {
               "page": "1110647",
@@ -789,7 +789,7 @@
           },
           "page_id": "1111040",
           "name": "Шарфы ",
-          "uri": "sharfy-s-printom",
+          "url": "sharfy-s-printom",
           "product": [
             {
               "page": "1111040",
@@ -891,7 +891,7 @@
           },
           "page_id": "1109755",
           "name": "Плащи-дождевики ",
-          "uri": "dozhdeviki-s-printom",
+          "url": "dozhdeviki-s-printom",
           "product": [
             {
               "page": "1109755",
@@ -1149,7 +1149,7 @@
           },
           "page_id": "1111041",
           "name": "Джемперы ",
-          "uri": "jumpery-s-printom",
+          "url": "jumpery-s-printom",
           "product": [
             {
               "page": "1111041",
@@ -1227,7 +1227,7 @@
           },
           "page_id": "1111059",
           "name": "Новогодний мерч",
-          "uri": "novogodniy-merch",
+          "url": "novogodniy-merch",
           "product": [
             {
               "page": "1111059",
@@ -1609,7 +1609,7 @@
           },
           "page_id": "1105697",
           "name": "Жилеты",
-          "uri": "odejda-jilety",
+          "url": "odejda-jilety",
           "product": [
             {
               "page": "1105697",
@@ -2259,7 +2259,7 @@
           },
           "page_id": "1105702",
           "name": "Ветровки",
-          "uri": "odejda-vetrovki",
+          "url": "odejda-vetrovki",
           "product": [
             {
               "page": "1105702",
@@ -2713,7 +2713,7 @@
           },
           "page_id": "1105853",
           "name": "Аксессуары",
-          "uri": "odejda-aksessuary",
+          "url": "odejda-aksessuary",
           "product": [
             {
               "page": "1105853",
@@ -2959,7 +2959,7 @@
           },
           "page_id": "1111833",
           "name": "Худи под нанесение логотипа",
-          "uri": "hoodie",
+          "url": "hoodie",
           "product": [
             {
               "page": "1111833",
@@ -4329,7 +4329,7 @@
           },
           "page_id": "1105699",
           "name": "Кепки и бейсболки",
-          "uri": "odejda-kepki",
+          "url": "odejda-kepki",
           "product": [
             {
               "page": "1105699",
@@ -5295,7 +5295,7 @@
           },
           "page_id": "1106007",
           "name": "Детская одежда",
-          "uri": "detskaya-odejda",
+          "url": "detskaya-odejda",
           "product": [
             {
               "page": "1106007",
@@ -6049,7 +6049,7 @@
           },
           "page_id": "1105695",
           "name": "Офисные рубашки",
-          "uri": "odejda-rubashki",
+          "url": "odejda-rubashki",
           "product": [
             {
               "page": "1105695",
@@ -6307,7 +6307,7 @@
           },
           "page_id": "1112440",
           "name": "Элементы брендирования и кастомизации",
-          "uri": "elementy-kastomizatsii",
+          "url": "elementy-kastomizatsii",
           "product": [
             {
               "page": "1112440",
@@ -7713,7 +7713,7 @@
           },
           "page_id": "1108599",
           "name": "Фартуки ",
-          "uri": "odejda-fartuki",
+          "url": "odejda-fartuki",
           "product": [
             {
               "page": "1108599",
@@ -7939,7 +7939,7 @@
           },
           "page_id": "1109179",
           "name": "Футболки с длинным рукавом",
-          "uri": "longsleeve",
+          "url": "longsleeve",
           "product": [
             {
               "page": "1109179",
@@ -8257,7 +8257,7 @@
           },
           "page_id": "1107096",
           "name": "Джемперы и кардиганы",
-          "uri": "odejda-jumper",
+          "url": "odejda-jumper",
           "product": [
             {
               "page": "1107096",
@@ -8531,7 +8531,7 @@
           },
           "page_id": "1104128",
           "name": "Футболки",
-          "uri": "futbolki",
+          "url": "futbolki",
           "product": [
             {
               "page": "1104128",
@@ -12445,7 +12445,7 @@
           },
           "page_id": "1105701",
           "name": "Толстовки",
-          "uri": "odejda-tolstovki",
+          "url": "odejda-tolstovki",
           "product": [
             {
               "page": "1105701",
@@ -13131,7 +13131,7 @@
           },
           "page_id": "1105693",
           "name": "Промо футболки",
-          "uri": "futbolki-futbolki-dlya-promo",
+          "url": "futbolki-futbolki-dlya-promo",
           "product": [
             {
               "page": "1105693",
@@ -14785,7 +14785,7 @@
           },
           "page_id": "1112561",
           "name": "Брюки и шорты ",
-          "uri": "bruki-i-shorty",
+          "url": "bruki-i-shorty",
           "product": [
             {
               "page": "1112561",
@@ -14979,7 +14979,7 @@
           },
           "page_id": "1105846",
           "name": "Куртки",
-          "uri": "odejda-kurtki",
+          "url": "odejda-kurtki",
           "product": [
             {
               "page": "1105846",
@@ -15661,7 +15661,7 @@
           },
           "page_id": "1105688",
           "name": "Футболки поло",
-          "uri": "polo-s-logotipom",
+          "url": "polo-s-logotipom",
           "product": [
             {
               "page": "1105688",
@@ -17823,7 +17823,7 @@
           },
           "page_id": "1106932",
           "name": "Флисовые куртки и кофты",
-          "uri": "flisovye-kurtki-i-kofty",
+          "url": "flisovye-kurtki-i-kofty",
           "product": [
             {
               "page": "1106932",
@@ -18405,7 +18405,7 @@
           },
           "page_id": "1111832",
           "name": "Свитшоты под нанесение логотипа",
-          "uri": "sweatshirts",
+          "url": "sweatshirts",
           "product": [
             {
               "page": "1111832",
@@ -19351,7 +19351,7 @@
           },
           "page_id": "1106755",
           "name": "Спортивная одежда",
-          "uri": "odejda-sportivnaya-odezhda",
+          "url": "odejda-sportivnaya-odezhda",
           "product": [
             {
               "page": "1106755",
@@ -19657,7 +19657,7 @@
           },
           "page_id": "1106914",
           "name": "Трикотажные шапки",
-          "uri": "odejda-trikotajnye-shapki",
+          "url": "odejda-trikotajnye-shapki",
           "product": [
             {
               "page": "1106914",
@@ -20647,7 +20647,7 @@
           },
           "page_id": "1105700",
           "name": "Шарфы",
-          "uri": "odejda-sharfy",
+          "url": "odejda-sharfy",
           "product": [
             {
               "page": "1105700",
@@ -21569,7 +21569,7 @@
           },
           "page_id": "1111983",
           "name": "Перчатки и варежки ",
-          "uri": "perchatki-i-varejki-s-logotipom",
+          "url": "perchatki-i-varejki-s-logotipom",
           "product": [
             {
               "page": "1111983",
@@ -21927,7 +21927,7 @@
           },
           "page_id": "1108055",
           "name": "Вязаные комплекты",
-          "uri": "odejda-vyazanye-komplekty",
+          "url": "odejda-vyazanye-komplekty",
           "product": [
             {
               "page": "1108055",
@@ -22237,7 +22237,7 @@
           },
           "page_id": "1108451",
           "name": "Панамы",
-          "uri": "odejda-panamy",
+          "url": "odejda-panamy",
           "product": [
             {
               "page": "1108451",
@@ -22459,7 +22459,7 @@
           },
           "page_id": "1110445",
           "name": "Дождевики",
-          "uri": "odejda-dojdeviki",
+          "url": "odejda-dojdeviki",
           "product": [
             {
               "page": "1110445",
@@ -22923,7 +22923,7 @@
       },
       "page_id": "1104130",
       "name": "Для дома",
-      "uri": "dom",
+      "url": "dom",
       "img": "/assets/img/svg-icon/item1.svg",
       "page": [
         {
@@ -22932,7 +22932,7 @@
           },
           "page_id": "1105712",
           "name": "Интерьерные подарки",
-          "uri": "dom-interernye-podarki",
+          "url": "dom-interernye-podarki",
           "product": [
             {
               "page": "1105712",
@@ -23286,7 +23286,7 @@
           },
           "page_id": "1105856",
           "name": "Игрушки",
-          "uri": "dom-igrushki",
+          "url": "dom-igrushki",
           "product": [
             {
               "page": "1105856",
@@ -23420,7 +23420,7 @@
           },
           "page_id": "1111189",
           "name": "Аксессуары и средства для ухода",
-          "uri": "aksessuary-i-sredstva-dlya-uhoda",
+          "url": "aksessuary-i-sredstva-dlya-uhoda",
           "product": [
             {
               "page": "1111189",
@@ -23566,7 +23566,7 @@
           },
           "page_id": "1106953",
           "name": "Пледы",
-          "uri": "dom-pledy",
+          "url": "dom-pledy",
           "product": [
             {
               "page": "1106953",
@@ -25460,7 +25460,7 @@
           },
           "page_id": "1106959",
           "name": "Полотенца ",
-          "uri": "s-polotenca-s-logotipom",
+          "url": "s-polotenca-s-logotipom",
           "product": [
             {
               "page": "1106959",
@@ -26082,7 +26082,7 @@
           },
           "page_id": "1104143",
           "name": "Часы и метеостанции",
-          "uri": "chasy",
+          "url": "chasy",
           "product": [
             {
               "page": "1104143",
@@ -26472,7 +26472,7 @@
           },
           "page_id": "1105866",
           "name": "Домашний текстиль",
-          "uri": "dom-tekstil",
+          "url": "dom-tekstil",
           "product": [
             {
               "page": "1105866",
@@ -26622,7 +26622,7 @@
           },
           "page_id": "1108476",
           "name": "Декоративные свечи и подсвечники",
-          "uri": "dom-dekorativnye-svechi",
+          "url": "dom-dekorativnye-svechi",
           "product": [
             {
               "page": "1108476",
@@ -26778,7 +26778,7 @@
       },
       "page_id": "1104132",
       "name": "Посуда",
-      "uri": "posuda",
+      "url": "posuda",
       "img": "/assets/img/svg-icon/item11.svg",
       "page": [
         {
@@ -26787,7 +26787,7 @@
           },
           "page_id": "1109720",
           "name": "Термокружки",
-          "uri": "termokrujki-s-printom",
+          "url": "termokrujki-s-printom",
           "product": [
             {
               "page": "1109720",
@@ -27809,7 +27809,7 @@
           },
           "page_id": "1110076",
           "name": "Столовые тарелки",
-          "uri": "stolovye-tarelki",
+          "url": "stolovye-tarelki",
           "product": [
             {
               "page": "1110076",
@@ -27859,7 +27859,7 @@
           },
           "page_id": "1107498",
           "name": "Термосы",
-          "uri": "s-otdyh-thermos",
+          "url": "s-otdyh-thermos",
           "product": [
             {
               "page": "1107498",
@@ -28277,7 +28277,7 @@
           },
           "page_id": "1112033",
           "name": "Многоразовые стаканы с крышкой",
-          "uri": "mnogorazovye-stakany-s-kryshkoy",
+          "url": "mnogorazovye-stakany-s-kryshkoy",
           "product": [
             {
               "page": "1112033",
@@ -28427,7 +28427,7 @@
           },
           "page_id": "1108861",
           "name": "Заварочные чайники",
-          "uri": "posuda-zavarochnye-chainiki",
+          "url": "posuda-zavarochnye-chainiki",
           "product": [
             {
               "page": "1108861",
@@ -28473,7 +28473,7 @@
           },
           "page_id": "1105730",
           "name": "Кружки",
-          "uri": "posuda-krujki",
+          "url": "posuda-krujki",
           "product": [
             {
               "page": "1105730",
@@ -30103,7 +30103,7 @@
           },
           "page_id": "1108859",
           "name": "Бокалы",
-          "uri": "posuda-bokaly",
+          "url": "posuda-bokaly",
           "product": [
             {
               "page": "1108859",
@@ -30277,7 +30277,7 @@
           },
           "page_id": "1107466",
           "name": "Бутылки для воды",
-          "uri": "s-butylka-dlya-vody",
+          "url": "s-butylka-dlya-vody",
           "product": [
             {
               "page": "1107466",
@@ -30727,7 +30727,7 @@
           },
           "page_id": "1108809",
           "name": "Предметы сервировки",
-          "uri": "posuda-predmety-servirovki",
+          "url": "posuda-predmety-servirovki",
           "product": [
             {
               "page": "1108809",
@@ -30953,7 +30953,7 @@
           },
           "page_id": "1107415",
           "name": "Кофейные наборы",
-          "uri": "s-kofeynye-nabory",
+          "url": "s-kofeynye-nabory",
           "product": [
             {
               "page": "1107415",
@@ -31111,7 +31111,7 @@
           },
           "page_id": "1110064",
           "name": "Разделочные доски",
-          "uri": "razdelochnye-doski",
+          "url": "razdelochnye-doski",
           "product": [
             {
               "page": "1110064",
@@ -31201,7 +31201,7 @@
           },
           "page_id": "1111959",
           "name": "Мельницы для специй",
-          "uri": "melnicy-dlya-speciy",
+          "url": "melnicy-dlya-speciy",
           "product": [
             {
               "page": "1111959",
@@ -31263,7 +31263,7 @@
           },
           "page_id": "1105711",
           "name": "Кухонные принадлежности",
-          "uri": "dom-kuhonnye-prisposobleniya",
+          "url": "dom-kuhonnye-prisposobleniya",
           "product": [
             {
               "page": "1105711",
@@ -31605,7 +31605,7 @@
           },
           "page_id": "1107473",
           "name": "Ланч-боксы",
-          "uri": "s-lanch-boksy",
+          "url": "s-lanch-boksy",
           "product": [
             {
               "page": "1107473",
@@ -31703,7 +31703,7 @@
           },
           "page_id": "1108474",
           "name": "Стаканы",
-          "uri": "posuda-stakany",
+          "url": "posuda-stakany",
           "product": [
             {
               "page": "1108474",
@@ -31861,7 +31861,7 @@
           },
           "page_id": "1109691",
           "name": "Барные аксессуары",
-          "uri": "posuda-barnye-aksessuary",
+          "url": "posuda-barnye-aksessuary",
           "product": [
             {
               "page": "1109691",
@@ -32103,7 +32103,7 @@
           },
           "page_id": "1107414",
           "name": "Чайные наборы",
-          "uri": "s-chaynye-nabory",
+          "url": "s-chaynye-nabory",
           "product": [
             {
               "page": "1107414",
@@ -32521,7 +32521,7 @@
           },
           "page_id": "1110074",
           "name": "Термосы для еды",
-          "uri": "termosy-dlia-edy",
+          "url": "termosy-dlia-edy",
           "product": [
             {
               "page": "1110074",
@@ -32739,7 +32739,7 @@
           },
           "page_id": "1110066",
           "name": "Костеры ",
-          "uri": "kostery",
+          "url": "kostery",
           "product": [
             {
               "page": "1110066",
@@ -32803,7 +32803,7 @@
       },
       "page_id": "1104133",
       "name": "Ручки и карандаши",
-      "uri": "ruchki",
+      "url": "ruchki",
       "img": "/assets/img/svg-icon/item6.svg",
       "page": [
         {
@@ -32812,7 +32812,7 @@
           },
           "page_id": "1105733",
           "name": "Бумажные и эко ручки ",
-          "uri": "eko-ruchki-bumazhnye",
+          "url": "eko-ruchki-bumazhnye",
           "product": [
             {
               "page": "1105733",
@@ -32950,7 +32950,7 @@
           },
           "page_id": "1105734",
           "name": "Наборы с ручками под логотип",
-          "uri": "ruchki-nabory-ruchek",
+          "url": "ruchki-nabory-ruchek",
           "product": [
             {
               "page": "1105734",
@@ -33588,7 +33588,7 @@
           },
           "page_id": "1105735",
           "name": "Металлические ручки ",
-          "uri": "ruchki-metallicheskie",
+          "url": "ruchki-metallicheskie",
           "product": [
             {
               "page": "1105735",
@@ -34322,7 +34322,7 @@
           },
           "page_id": "1105732",
           "name": "Карандаши ",
-          "uri": "ruchki-karandashi",
+          "url": "ruchki-karandashi",
           "product": [
             {
               "page": "1105732",
@@ -34552,7 +34552,7 @@
           },
           "page_id": "1105736",
           "name": "Пластиковые ручки ",
-          "uri": "ruchki-plastikovye",
+          "url": "ruchki-plastikovye",
           "product": [
             {
               "page": "1105736",
@@ -35882,7 +35882,7 @@
           },
           "page_id": "1106909",
           "name": "Футляры для ручек",
-          "uri": "futlyary-dlya-ruchek",
+          "url": "futlyary-dlya-ruchek",
           "product": [
             {
               "page": "1106909",
@@ -35969,7 +35969,7 @@
         {
           "page_id": "11057334535",
           "name": "Роллер",
-          "uri": "roller",
+          "url": "roller",
           "product": [
             {
               "page": "11057334535",
@@ -35996,7 +35996,7 @@
         {
           "page_id": "110623423909",
           "name": "Шариковые ручки",
-          "uri": "ballpoint-pens",
+          "url": "ballpoint-pens",
           "product": [
             {
               "page": "110623423909",
@@ -36632,13 +36632,13 @@
       },
       "page_id": "1104134",
       "name": "Сумки и рюкзаки",
-      "uri": "sumki",
+      "url": "sumki",
       "img": "/assets/img/svg-icon/item15.svg",
       "page": [
         {
           "page_id": "1104134",
           "name": "Сумка для покупок",
-          "uri": "sumki_dly_product",
+          "url": "sumki_dly_product",
           "product": [
             {
               "page": "000000232",
@@ -36689,7 +36689,7 @@
           },
           "page_id": "1110648",
           "name": "Рюкзаки ",
-          "uri": "ryukzaki-s-printom",
+          "url": "ryukzaki-s-printom",
           "product": [
             {
               "page": "1110648",
@@ -36743,7 +36743,7 @@
           },
           "page_id": "1109722",
           "name": "Сумки ",
-          "uri": "sumki-s-printom",
+          "url": "sumki-s-printom",
           "product": [
             {
               "page": "1109722",
@@ -37341,7 +37341,7 @@
           },
           "page_id": "1109473",
           "name": "Поясные сумки",
-          "uri": "s-sumki-na-poyas",
+          "url": "s-sumki-na-poyas",
           "product": [
             {
               "page": "1109473",
@@ -37599,7 +37599,7 @@
           },
           "page_id": "1105739",
           "name": "Шоперы ",
-          "uri": "sumki-sumki-dlya-pokupok",
+          "url": "sumki-sumki-dlya-pokupok",
           "product": [
             {
               "page": "1105739",
@@ -38217,7 +38217,7 @@
           },
           "page_id": "1105743",
           "name": "Рюкзаки",
-          "uri": "sumki-ryukzaki",
+          "url": "sumki-ryukzaki",
           "product": [
             {
               "page": "1105743",
@@ -39439,7 +39439,7 @@
           },
           "page_id": "1107028",
           "name": "Чемоданы",
-          "uri": "sumki-chemodany",
+          "url": "sumki-chemodany",
           "product": [
             {
               "page": "1107028",
@@ -39713,7 +39713,7 @@
           },
           "page_id": "1105744",
           "name": "Сумки для ноутбука",
-          "uri": "sumki-sumki-dlya-noutbuka",
+          "url": "sumki-sumki-dlya-noutbuka",
           "product": [
             {
               "page": "1105744",
@@ -39795,7 +39795,7 @@
           },
           "page_id": "1105742",
           "name": "Сумки для документов",
-          "uri": "sumki-konferenc-sumki",
+          "url": "sumki-konferenc-sumki",
           "product": [
             {
               "page": "1105742",
@@ -39937,7 +39937,7 @@
           },
           "page_id": "1105740",
           "name": "Дорожные сумки",
-          "uri": "sumki-dorojnye",
+          "url": "sumki-dorojnye",
           "product": [
             {
               "page": "1105740",
@@ -40007,7 +40007,7 @@
           },
           "page_id": "1105738",
           "name": "Несессеры и косметички",
-          "uri": "sumki-nesessery",
+          "url": "sumki-nesessery",
           "product": [
             {
               "page": "1105738",
@@ -40225,7 +40225,7 @@
           },
           "page_id": "1106108",
           "name": "Сумки для пикника",
-          "uri": "sumki-dlya-piknika",
+          "url": "sumki-dlya-piknika",
           "product": [
             {
               "page": "1106108",
@@ -40419,7 +40419,7 @@
           },
           "page_id": "1111867",
           "name": "Сумки через плечо ",
-          "uri": "sumki-cherez-plecho",
+          "url": "sumki-cherez-plecho",
           "product": [
             {
               "page": "1111867",
@@ -40471,7 +40471,7 @@
       },
       "page_id": "1104136",
       "name": "Зонты",
-      "uri": "zonty",
+      "url": "zonty",
       "img": "/assets/img/svg-icon/item3.svg",
       "page": [
         {
@@ -40480,7 +40480,7 @@
           },
           "page_id": "1111179",
           "name": "Зонты ",
-          "uri": "zonty-s-printom",
+          "url": "zonty-s-printom",
           "product": [
             {
               "page": "1111179",
@@ -40562,7 +40562,7 @@
           },
           "page_id": "1105768",
           "name": "Зонты трости",
-          "uri": "zonty-zonty-trosti",
+          "url": "zonty-zonty-trosti",
           "product": [
             {
               "page": "1105768",
@@ -41424,7 +41424,7 @@
           },
           "page_id": "1105766",
           "name": "Необычные и оригинальные зонты",
-          "uri": "zonty-neobychnye-zonty",
+          "url": "zonty-neobychnye-zonty",
           "product": [
             {
               "page": "1105766",
@@ -41534,7 +41534,7 @@
           },
           "page_id": "1105767",
           "name": "Складные зонты",
-          "uri": "zonty-skladnye-zonty",
+          "url": "zonty-skladnye-zonty",
           "product": [
             {
               "page": "1105767",
@@ -42526,13 +42526,13 @@
       },
       "page_id": "1104139",
       "name": "Электроника",
-      "uri": "elektronika",
+      "url": "elektronika",
       "img": "/assets/img/svg-icon/item18.svg",
       "page": [
         {
           "page_id": "11114232145",
           "name": "Смарт браслет",
-          "uri": "uvlajniteli-vozduha",
+          "url": "uvlajniteli-vozduha",
           "product": [
             {
               "page": "11114232145",
@@ -42559,7 +42559,7 @@
           },
           "page_id": "1105746",
           "name": "Компьютерные и мобильные аксессуары",
-          "uri": "elektronika-aksessuary-dlya-mobilnyh-ustroystv",
+          "url": "elektronika-aksessuary-dlya-mobilnyh-ustroystv",
           "product": [
             {
               "page": "1105746",
@@ -42957,7 +42957,7 @@
           },
           "page_id": "1108533",
           "name": "Бытовая техника",
-          "uri": "elektronika-bytovaya-tehnika",
+          "url": "elektronika-bytovaya-tehnika",
           "product": [
             {
               "page": "1108533",
@@ -43215,7 +43215,7 @@
           },
           "page_id": "1105855",
           "name": "Зарядные устройства для телефона ",
-          "uri": "zariadnye-ustroistva-i-adaptery",
+          "url": "zariadnye-ustroistva-i-adaptery",
           "product": [
             {
               "page": "1105855",
@@ -43421,7 +43421,7 @@
           },
           "page_id": "1109305",
           "name": "Лампы и светильники",
-          "uri": "electronica-lampy-i-svetilniki-s-logotipom",
+          "url": "electronica-lampy-i-svetilniki-s-logotipom",
           "product": [
             {
               "page": "1109305",
@@ -43643,7 +43643,7 @@
           },
           "page_id": "1106929",
           "name": "Портативные колонки",
-          "uri": "elektronika-portativnye-kolonki",
+          "url": "elektronika-portativnye-kolonki",
           "product": [
             {
               "page": "1106929",
@@ -43973,7 +43973,7 @@
           },
           "page_id": "1107406",
           "name": "Наушники",
-          "uri": "elektronika-naushniki",
+          "url": "elektronika-naushniki",
           "product": [
             {
               "page": "1107406",
@@ -44039,7 +44039,7 @@
           },
           "page_id": "1106025",
           "name": "Внешние аккумуляторы power bank ",
-          "uri": "vneshniye-akkumulyatory-powerbanks",
+          "url": "vneshniye-akkumulyatory-powerbanks",
           "product": [
             {
               "page": "1106025",
@@ -44685,7 +44685,7 @@
           },
           "page_id": "1104140",
           "name": "Флешки",
-          "uri": "fleshki",
+          "url": "fleshki",
           "product": [
             {
               "page": "1104140",
@@ -45359,7 +45359,7 @@
           },
           "page_id": "1112145",
           "name": "Увлажнители воздуха ",
-          "uri": "uvlajniteli-vozduha",
+          "url": "uvlajniteli-vozduha",
           "product": [
             {
               "page": "1112145",
@@ -45431,7 +45431,7 @@
       },
       "page_id": "1104141",
       "name": "Корпоративные подарки",
-      "uri": "korporativnye-podarki",
+      "url": "korporativnye-podarki",
       "img": "/assets/img/svg-icon/item4.svg",
       "page": [
         {
@@ -45440,7 +45440,7 @@
           },
           "page_id": "1105783",
           "name": "Зажигалки",
-          "uri": "promo-zajigalki",
+          "url": "promo-zajigalki",
           "product": [
             {
               "page": "1105783",
@@ -45474,7 +45474,7 @@
           },
           "page_id": "1110521",
           "name": "Средства индивидуальной защиты",
-          "uri": "sredstva-individualnoy-zaschity",
+          "url": "sredstva-individualnoy-zaschity",
           "product": [
             {
               "page": "1110521",
@@ -45528,7 +45528,7 @@
           },
           "page_id": "1105804",
           "name": "Папки, портфели",
-          "uri": "korporativnye-papki-portfeli",
+          "url": "korporativnye-papki-portfeli",
           "product": [
             {
               "page": "1105804",
@@ -45838,7 +45838,7 @@
           },
           "page_id": "1107985",
           "name": "Чехлы для карт",
-          "uri": "korporativnye-cartholdery",
+          "url": "korporativnye-cartholdery",
           "product": [
             {
               "page": "1107985",
@@ -46348,7 +46348,7 @@
           },
           "page_id": "1105809",
           "name": "Дорожные органайзеры",
-          "uri": "personalnye-dorojnye-organayzery",
+          "url": "personalnye-dorojnye-organayzery",
           "product": [
             {
               "page": "1105809",
@@ -46734,7 +46734,7 @@
           },
           "page_id": "1105811",
           "name": "Кошельки",
-          "uri": "personalnye-koshelki",
+          "url": "personalnye-koshelki",
           "product": [
             {
               "page": "1105811",
@@ -47044,7 +47044,7 @@
           },
           "page_id": "1111200",
           "name": "Канцелярские принадлежности",
-          "uri": "kancelyarskie-prinadlejnosti",
+          "url": "kancelyarskie-prinadlejnosti",
           "product": [
             {
               "page": "1111200",
@@ -47174,7 +47174,7 @@
           },
           "page_id": "1112876",
           "name": "Чехлы для пропуска",
-          "uri": "chehly-dlya-propuska",
+          "url": "chehly-dlya-propuska",
           "product": [
             {
               "page": "1112876",
@@ -47564,7 +47564,7 @@
           },
           "page_id": "1105808",
           "name": "Обложки для документов",
-          "uri": "personalnye-oblojki-dlya-dokumentov",
+          "url": "personalnye-oblojki-dlya-dokumentov",
           "product": [
             {
               "page": "1105808",
@@ -48074,7 +48074,7 @@
           },
           "page_id": "1105762",
           "name": "Настольные аксессуары",
-          "uri": "ofis-nastolnye-aksessuary",
+          "url": "ofis-nastolnye-aksessuary",
           "product": [
             {
               "page": "1105762",
@@ -48272,7 +48272,7 @@
           },
           "page_id": "1111600",
           "name": "Бейджи и аксессуары",
-          "uri": "beydji-i-aksessuary",
+          "url": "beydji-i-aksessuary",
           "product": [
             {
               "page": "1111600",
@@ -48646,7 +48646,7 @@
           },
           "page_id": "1105791",
           "name": "Брелки ",
-          "uri": "brelki-s-logotipom",
+          "url": "brelki-s-logotipom",
           "product": [
             {
               "page": "1105791",
@@ -49128,7 +49128,7 @@
           },
           "page_id": "1105792",
           "name": "Антистрессы",
-          "uri": "promo-antistressy",
+          "url": "promo-antistressy",
           "product": [
             {
               "page": "1105792",
@@ -49310,7 +49310,7 @@
           },
           "page_id": "1105810",
           "name": "Визитницы",
-          "uri": "personalnye-vizitnicy",
+          "url": "personalnye-vizitnicy",
           "product": [
             {
               "page": "1105810",
@@ -49424,7 +49424,7 @@
           },
           "page_id": "1105817",
           "name": "Подарочные книги",
-          "uri": "vip-podarochnye-knigi",
+          "url": "vip-podarochnye-knigi",
           "product": [
             {
               "page": "1105817",
@@ -49562,7 +49562,7 @@
           },
           "page_id": "1105789",
           "name": "Светоотражатели",
-          "uri": "promo-svetootrajateli",
+          "url": "promo-svetootrajateli",
           "product": [
             {
               "page": "1105789",
@@ -49702,7 +49702,7 @@
       },
       "page_id": "1104144",
       "name": "Ежедневники и блокноты",
-      "uri": "ejednevniki-i-bloknoty",
+      "url": "ejednevniki-i-bloknoty",
       "img": "/assets/img/svg-icon/item2.svg",
       "page": [
         {
@@ -49711,7 +49711,7 @@
           },
           "page_id": "1109724",
           "name": "Оригинальные ежедневники ",
-          "uri": "ejednevniki-originalnye",
+          "url": "ejednevniki-originalnye",
           "product": [
             {
               "page": "1109724",
@@ -49841,7 +49841,7 @@
           },
           "page_id": "1105828",
           "name": "Упаковка для ежедневников",
-          "uri": "ejednevniki-upakovka",
+          "url": "ejednevniki-upakovka",
           "product": [
             {
               "page": "1105828",
@@ -50315,7 +50315,7 @@
           },
           "page_id": "1107316",
           "name": "Наборы с ежедневниками",
-          "uri": "nabori-s-ejednevnikami",
+          "url": "nabori-s-ejednevnikami",
           "product": [
             {
               "page": "1107316",
@@ -52097,7 +52097,7 @@
           },
           "page_id": "1106110",
           "name": "Блокноты ",
-          "uri": "bloknoty",
+          "url": "bloknoty",
           "product": [
             {
               "page": "1106110",
@@ -52735,7 +52735,7 @@
           },
           "page_id": "1108650",
           "name": "Ежедневники ",
-          "uri": "ejednevniki",
+          "url": "ejednevniki",
           "product": [
             {
               "page": "1108650",
@@ -55494,7 +55494,7 @@
         {
           "page_id": "1108342412",
           "name": "Ежедневники с недатированный",
-          "uri": "ejednevniki-not-datirovann",
+          "url": "ejednevniki-not-datirovann",
           "product": [
             {
               "page": "1108342412",
@@ -56613,7 +56613,7 @@
         {
           "page_id": "110865024321",
           "name": "Ежедневники с датированные",
-          "uri": "ejednevniki-datirovann",
+          "url": "ejednevniki-datirovann",
           "product": [
             {
               "page": "110865024321",
@@ -56644,7 +56644,7 @@
         {
           "page_id": "1105821234128",
           "name": "Планинги недатированный",
-          "uri": "ejednevniki-palling-not",
+          "url": "ejednevniki-palling-not",
           "product": [
             {
               "page": "1105821234128",
@@ -56679,7 +56679,7 @@
         {
           "page_id": "110581234123428",
           "name": "Планинги датированный",
-          "uri": "ejednevniki-palling",
+          "url": "ejednevniki-palling",
           "product": [
             {
               "page": "110581234123428",
@@ -56703,7 +56703,7 @@
       },
       "page_id": "1105845",
       "name": "Праздники",
-      "uri": "novyy-god",
+      "url": "novyy-god",
       "img": "/assets/img/svg-icon/item12.svg",
       "page": [
         {
@@ -56712,7 +56712,7 @@
           },
           "page_id": "1105861",
           "name": "Новогодние елочные игрушки",
-          "uri": "novogodnie-igrushki",
+          "url": "novogodnie-igrushki",
           "product": [
             {
               "page": "1105861",
@@ -56854,7 +56854,7 @@
           },
           "page_id": "1107355",
           "name": "Новогодние свечи и подсвечники",
-          "uri": "s-novogodnie-svechi",
+          "url": "s-novogodnie-svechi",
           "product": [
             {
               "page": "1107355",
@@ -57040,7 +57040,7 @@
           },
           "page_id": "1107252",
           "name": "Новогодние наборы",
-          "uri": "s-novogodnie-nabory",
+          "url": "s-novogodnie-nabory",
           "product": [
             {
               "page": "1107252",
@@ -57202,7 +57202,7 @@
           },
           "page_id": "1105862",
           "name": "Украшения для офиса к новому году",
-          "uri": "novyy-god-dekor-dlya-ofisa",
+          "url": "novyy-god-dekor-dlya-ofisa",
           "product": [
             {
               "page": "1105862",
@@ -57404,7 +57404,7 @@
           },
           "page_id": "1105857",
           "name": "Подарки с символом 2024 года",
-          "uri": "novyy-god-simvol-goda",
+          "url": "novyy-god-simvol-goda",
           "product": [
             {
               "page": "1105857",
@@ -57502,7 +57502,7 @@
           },
           "page_id": "1111733",
           "name": "Новогодние гирлянды и светильники",
-          "uri": "novogodnie-girlyandy-i-svetilniki",
+          "url": "novogodnie-girlyandy-i-svetilniki",
           "product": [
             {
               "page": "1111733",
@@ -57604,7 +57604,7 @@
           },
           "page_id": "1107027",
           "name": "Оригинальные календари",
-          "uri": "novyy-god-originalnye-kalendari",
+          "url": "novyy-god-originalnye-kalendari",
           "product": [
             {
               "page": "1107027",
@@ -57698,7 +57698,7 @@
           },
           "page_id": "1106045",
           "name": "Новогодние елочные шары",
-          "uri": "s-novogodnie-shary",
+          "url": "s-novogodnie-shary",
           "product": [
             {
               "page": "1106045",
@@ -58020,7 +58020,7 @@
           },
           "page_id": "1105997",
           "name": "Новогодняя упаковка для подарков",
-          "uri": "upakovka-dlya-novogodnih-podarkov",
+          "url": "upakovka-dlya-novogodnih-podarkov",
           "product": [
             {
               "page": "1105997",
@@ -58422,7 +58422,7 @@
           },
           "page_id": "1106895",
           "name": "Новогодние подушки и пледы",
-          "uri": "novogodnie-podushki-i-pledy",
+          "url": "novogodnie-podushki-i-pledy",
           "product": [
             {
               "page": "1106895",
@@ -58540,7 +58540,7 @@
           },
           "page_id": "1105877",
           "name": "Новогодняя вязаная одежда",
-          "uri": "novogodniaia-viazanaia-odezhda",
+          "url": "novogodniaia-viazanaia-odezhda",
           "product": [
             {
               "page": "1105877",
@@ -58730,7 +58730,7 @@
           },
           "page_id": "1105858",
           "name": "Новогодний стол",
-          "uri": "novogodnie-ukrasheniya-dlya-stola",
+          "url": "novogodnie-ukrasheniya-dlya-stola",
           "product": [
             {
               "page": "1105858",
@@ -58936,7 +58936,7 @@
           },
           "page_id": "1111744",
           "name": "Новогодние наборы для творчества",
-          "uri": "novogodnie-nabory-dlya-tvorchestva",
+          "url": "novogodnie-nabory-dlya-tvorchestva",
           "product": [
             {
               "page": "1111744",
@@ -58986,7 +58986,7 @@
           },
           "page_id": "1106885",
           "name": "Подарки на День учителя 5 октября",
-          "uri": "podarki-na-den-uchitelya",
+          "url": "podarki-na-den-uchitelya",
           "product": [
             {
               "page": "1106885",
@@ -59108,7 +59108,7 @@
           },
           "page_id": "1105912",
           "name": "Подарки ко Дню нефтяника",
-          "uri": "den-neftyanika",
+          "url": "den-neftyanika",
           "product": [
             {
               "page": "1105912",
@@ -59222,7 +59222,7 @@
           },
           "page_id": "1106941",
           "name": "Подарки на День железнодорожника",
-          "uri": "den-jeleznodorojnika",
+          "url": "den-jeleznodorojnika",
           "product": [
             {
               "page": "1106941",
@@ -59324,7 +59324,7 @@
           },
           "page_id": "1105909",
           "name": "Подарки на День строителя",
-          "uri": "den-stroitelya",
+          "url": "den-stroitelya",
           "product": [
             {
               "page": "1105909",
@@ -59542,7 +59542,7 @@
           },
           "page_id": "1105919",
           "name": "Подарки на День юриста 3 декабря",
-          "uri": "den-yurista",
+          "url": "den-yurlsta",
           "product": [
             {
               "page": "1105919",
@@ -59652,7 +59652,7 @@
           },
           "page_id": "1106924",
           "name": "Подарки на День России 12 июня",
-          "uri": "podarki-na-den-rossii",
+          "url": "podarki-na-den-rossii",
           "product": [
             {
               "page": "1106924",
@@ -59730,7 +59730,7 @@
           },
           "page_id": "1110231",
           "name": "Подарки программистам",
-          "uri": "podarki-programmistam",
+          "url": "podarki-programmistam",
           "product": [
             {
               "page": "1110231",
@@ -59940,7 +59940,7 @@
           },
           "page_id": "1106883",
           "name": "Подарок коллеге",
-          "uri": "podarki-kollege",
+          "url": "podarki-kollege",
           "product": [
             {
               "page": "1106883",
@@ -60042,7 +60042,7 @@
           },
           "page_id": "1106882",
           "name": "Подарки начальнику",
-          "uri": "podarki-nachalniku",
+          "url": "podarki-nachalniku",
           "product": [
             {
               "page": "1106882",
@@ -60224,7 +60224,7 @@
           },
           "page_id": "1105905",
           "name": "Подарки детям",
-          "uri": "den-zashhity-detey",
+          "url": "den-zashhity-detey",
           "product": [
             {
               "page": "1105905",
@@ -60910,7 +60910,7 @@
           },
           "page_id": "1106921",
           "name": "Подарки на День рождения компании",
-          "uri": "podarki-na-den-rozhdeniya-kompanii",
+          "url": "podarki-na-den-rozhdeniya-kompanii",
           "product": [
             {
               "page": "1106921",
@@ -60996,7 +60996,7 @@
           },
           "page_id": "1105911",
           "name": "Подарки ко Дню шахтера",
-          "uri": "den-shahtera",
+          "url": "den-shahtera",
           "product": [
             {
               "page": "1105911",
@@ -61154,7 +61154,7 @@
           },
           "page_id": "1105916",
           "name": "Подарки на День полиции (милиции) 10 ноября",
-          "uri": "podarki-na-den-policii",
+          "url": "podarki-na-den-policii",
           "product": [
             {
               "page": "1105916",
@@ -61212,7 +61212,7 @@
           },
           "page_id": "1106946",
           "name": "Подарки на День знаний 1 сентября",
-          "uri": "den-znaniy-1-sentyabrya",
+          "url": "den-znaniy-1-sentyabrya",
           "product": [
             {
               "page": "1106946",
@@ -61366,7 +61366,7 @@
           },
           "page_id": "1110232",
           "name": "Подарки системным администраторам",
-          "uri": "podarki-sistemnym-administratoram",
+          "url": "podarki-sistemnym-administratoram",
           "product": [
             {
               "page": "1110232",
@@ -61532,7 +61532,7 @@
           },
           "page_id": "1105900",
           "name": "Подарки на День геолога",
-          "uri": "den-geologa",
+          "url": "den-geologa",
           "product": [
             {
               "page": "1105900",
@@ -61694,7 +61694,7 @@
           },
           "page_id": "1105892",
           "name": "Подарки на 14 февраля",
-          "uri": "14-fevralya",
+          "url": "14-fevralya",
           "product": [
             {
               "page": "1105892",
@@ -61848,7 +61848,7 @@
           },
           "page_id": "1106920",
           "name": "Подарки на День энергетика 22 декабря",
-          "uri": "podarki-na-den-energetika",
+          "url": "podarki-na-den-energetika",
           "product": [
             {
               "page": "1106920",
@@ -62030,7 +62030,7 @@
           },
           "page_id": "1105910",
           "name": "Подарки на День авиации",
-          "uri": "den-aviacii",
+          "url": "den-aviacii",
           "product": [
             {
               "page": "1105910",
@@ -62092,7 +62092,7 @@
           },
           "page_id": "1105893",
           "name": "Сувениры к 23 февраля",
-          "uri": "suveniry-k-23-fevralya",
+          "url": "suveniry-k-23-fevralya",
           "product": [
             {
               "page": "1105893",
@@ -62914,7 +62914,7 @@
           },
           "page_id": "1106943",
           "name": "Подарки на День Победы 9 мая",
-          "uri": "den-pobedy-9-maya",
+          "url": "den-pobedy-9-maya",
           "product": [
             {
               "page": "1106943",
@@ -63484,7 +63484,7 @@
           },
           "page_id": "1105903",
           "name": "Подарки на День электросвязи 17 мая",
-          "uri": "den-elektrosvyazi",
+          "url": "den-elektrosvyazi",
           "product": [
             {
               "page": "1105903",
@@ -63538,7 +63538,7 @@
           },
           "page_id": "1106944",
           "name": "Подарки на День химика",
-          "uri": "den-himika",
+          "url": "den-himika",
           "product": [
             {
               "page": "1106944",
@@ -63656,7 +63656,7 @@
           },
           "page_id": "1106884",
           "name": "Подарки автомобилисту",
-          "uri": "podarki-avtomobilistu",
+          "url": "podarki-avtomobilistu",
           "product": [
             {
               "page": "1106884",
@@ -63878,7 +63878,7 @@
           },
           "page_id": "1105918",
           "name": "Подарки на День банковского работника 2 декабря",
-          "uri": "den-bankovskogo-rabotnika",
+          "url": "den-bankovskogo-rabotnika",
           "product": [
             {
               "page": "1105918",
@@ -63992,7 +63992,7 @@
           },
           "page_id": "1106942",
           "name": "Подарки на День металлурга",
-          "uri": "den-metallurga",
+          "url": "den-metallurga",
           "product": [
             {
               "page": "1106942",
@@ -64222,7 +64222,7 @@
           },
           "page_id": "1105907",
           "name": "Подарки на День медицинского работника",
-          "uri": "den-medrabotnika",
+          "url": "den-medrabotnika",
           "product": [
             {
               "page": "1105907",
@@ -64400,7 +64400,7 @@
           },
           "page_id": "1105895",
           "name": "Сувениры к 8 марта",
-          "uri": "suveniry-k-8-marta",
+          "url": "suveniry-k-8-marta",
           "product": [
             {
               "page": "1105895",
@@ -65242,7 +65242,7 @@
           },
           "page_id": "1106945",
           "name": "Подарки морякам",
-          "uri": "podarki-moryakam",
+          "url": "podarki-moryakam",
           "product": [
             {
               "page": "1106945",
@@ -65382,7 +65382,7 @@
       },
       "page_id": "1105994",
       "name": "Подарочная упаковка",
-      "uri": "upakovka",
+      "url": "upakovka",
       "img": "/assets/img/svg-icon/item8.svg",
       "page": [
         {
@@ -65391,7 +65391,7 @@
           },
           "page_id": "1107407",
           "name": "Подарочные коробки",
-          "uri": "podarochnye-korobki",
+          "url": "podarochnye-korobki",
           "product": [
             {
               "page": "1107407",
@@ -67897,7 +67897,7 @@
           },
           "page_id": "1105998",
           "name": "Подарочные пакеты",
-          "uri": "podarochnye-pakety",
+          "url": "podarochnye-pakety",
           "product": [
             {
               "page": "1105998",
@@ -68263,7 +68263,7 @@
           },
           "page_id": "1105995",
           "name": "Подарочная упаковка",
-          "uri": "podarochnaya-upakovka",
+          "url": "podarochnaya-upakovka",
           "product": [
             {
               "page": "1105995",
@@ -68855,7 +68855,7 @@
       },
       "page_id": "1107210",
       "name": "Подарочные наборы",
-      "uri": "podarochnye-nabory",
+      "url": "podarochnye-nabory",
       "img": "/assets/img/svg-icon/item9.svg",
       "page": [
         {
@@ -68864,7 +68864,7 @@
           },
           "page_id": "1109728",
           "name": "Оригинальные подарки ",
-          "uri": "originalnye-podarki-s-printom",
+          "url": "originalnye-podarki-s-printom",
           "product": [
             {
               "page": "1109728",
@@ -69326,7 +69326,7 @@
           },
           "page_id": "1109727",
           "name": "Тематические подарочные наборы",
-          "uri": "tematicheskie-podarochnye-nabory",
+          "url": "tematicheskie-podarochnye-nabory",
           "product": [
             {
               "page": "1109727",
@@ -69416,7 +69416,7 @@
           },
           "page_id": "1112024",
           "name": "Подарочные наборы для детей",
-          "uri": "podarochnye-nabory-dlya-detey",
+          "url": "podarochnye-nabory-dlya-detey",
           "product": [
             {
               "page": "1112024",
@@ -69674,7 +69674,7 @@
           },
           "page_id": "1108073",
           "name": "Подарочные наборы для мужчин",
-          "uri": "s-podarochnye-nabory-dlya-mujchin",
+          "url": "s-podarochnye-nabory-dlya-mujchin",
           "product": [
             {
               "page": "1108073",
@@ -70052,7 +70052,7 @@
           },
           "page_id": "1109501",
           "name": "Подарочные наборы с флешками",
-          "uri": "podarochnye-nabory-s-fleshkami",
+          "url": "podarochnye-nabory-s-fleshkami",
           "product": [
             {
               "page": "1109501",
@@ -70562,7 +70562,7 @@
           },
           "page_id": "1105807",
           "name": "Бизнес наборы",
-          "uri": "podarochnye-biznes-nabory",
+          "url": "podarochnye-biznes-nabory",
           "product": [
             {
               "page": "1105807",
@@ -71296,7 +71296,7 @@
           },
           "page_id": "1108072",
           "name": "Подарочные наборы для женщин",
-          "uri": "s-podarochnye-nabory-dlya-jenshhin",
+          "url": "s-podarochnye-nabory-dlya-jenshhin",
           "product": [
             {
               "page": "1108072",
@@ -71718,7 +71718,7 @@
           },
           "page_id": "1110525",
           "name": "Спортивные наборы",
-          "uri": "sportivnye-nabory",
+          "url": "sportivnye-nabory",
           "product": [
             {
               "page": "1110525",
@@ -71912,7 +71912,7 @@
           },
           "page_id": "1111096",
           "name": "Подарочные наборы для дома",
-          "uri": "podarochnye-nabory-dlya-doma",
+          "url": "podarochnye-nabory-dlya-doma",
           "product": [
             {
               "page": "1111096",
@@ -71970,7 +71970,7 @@
           },
           "page_id": "1111508",
           "name": "Подарочные наборы изделий из кожи ",
-          "uri": "podarochnye-nabory-iz-koji",
+          "url": "podarochnye-nabory-iz-koji",
           "product": [
             {
               "page": "1111508",
@@ -72340,7 +72340,7 @@
           },
           "page_id": "1108065",
           "name": "Подарочные наборы с аккумуляторами",
-          "uri": "s-podarochnye-nabory-s-vneshnimi-akkumulyatorami",
+          "url": "s-podarochnye-nabory-s-vneshnimi-akkumulyatorami",
           "product": [
             {
               "page": "1108065",
@@ -73146,7 +73146,7 @@
           },
           "page_id": "1109500",
           "name": "Дорожные наборы для путешествий",
-          "uri": "dorojnye-nabory-dlya-puteshestviy",
+          "url": "dorojnye-nabory-dlya-puteshestviy",
           "product": [
             {
               "page": "1109500",
@@ -73356,7 +73356,7 @@
           },
           "page_id": "1110027",
           "name": "Подарочные наборы с пледами",
-          "uri": "podarochnye-nabory-s-pledami",
+          "url": "podarochnye-nabory-s-pledami",
           "product": [
             {
               "page": "1110027",
@@ -73550,7 +73550,7 @@
           },
           "page_id": "1109068",
           "name": "Наборы для выращивания растений",
-          "uri": "nabory-dlya-vyrashhivaniya-rasteniy",
+          "url": "nabory-dlya-vyrashhivaniya-rasteniy",
           "product": [
             {
               "page": "1109068",
@@ -73644,7 +73644,7 @@
           },
           "page_id": "1108609",
           "name": "Наборы для сыра",
-          "uri": "podarochnye-nabory-dlya-syra",
+          "url": "podarochnye-nabory-dlya-syra",
           "product": [
             {
               "page": "1108609",
@@ -73718,7 +73718,7 @@
           },
           "page_id": "1105715",
           "name": "Винные наборы",
-          "uri": "dom-vinnye-nabory",
+          "url": "dom-vinnye-nabory",
           "product": [
             {
               "page": "1105715",
@@ -73812,7 +73812,7 @@
           },
           "page_id": "1109502",
           "name": "Подарочные наборы с колонками",
-          "uri": "podarochnye-nabory-s-kolonkami",
+          "url": "podarochnye-nabory-s-kolonkami",
           "product": [
             {
               "page": "1109502",
@@ -73926,7 +73926,7 @@
           },
           "page_id": "1112973",
           "name": "Кухонные подарочные наборы",
-          "uri": "kuhonnye-podarochnye-nabory",
+          "url": "kuhonnye-podarochnye-nabory",
           "product": [
             {
               "page": "1112973",
@@ -74036,7 +74036,7 @@
           },
           "page_id": "1108069",
           "name": "Подарочные наборы с термокружками",
-          "uri": "s-podarochnye-nabory-s-termokrujkami",
+          "url": "s-podarochnye-nabory-s-termokrujkami",
           "product": [
             {
               "page": "1108069",
@@ -74390,7 +74390,7 @@
           },
           "page_id": "1107058",
           "name": "Наборы стаканов и камни для виски",
-          "uri": "s-nabory-dlya-viski",
+          "url": "s-nabory-dlya-viski",
           "product": [
             {
               "page": "1107058",
@@ -74460,7 +74460,7 @@
           },
           "page_id": "1109606",
           "name": "Подарочные наборы с мультитулами",
-          "uri": "podarochnye-nabory-s-multitulami",
+          "url": "podarochnye-nabory-s-multitulami",
           "product": [
             {
               "page": "1109606",
@@ -74552,7 +74552,7 @@
       },
       "page_id": "1110903",
       "name": "Съедобные подарки",
-      "uri": "sjedobnye-podarki",
+      "url": "sjedobnye-podarki",
       "img": "/assets/img/svg-icon/item16.svg",
       "page": [
         {
@@ -74561,7 +74561,7 @@
           },
           "page_id": "1107076",
           "name": "Подарочные продуктовые наборы",
-          "uri": "s-podarochnye-produktovye-nabory",
+          "url": "s-podarochnye-produktovye-nabory",
           "product": [
             {
               "page": "1107076",
@@ -75031,7 +75031,7 @@
           },
           "page_id": "1109744",
           "name": "Подарочные наборы с чаем",
-          "uri": "podarochnye-nabory-s-chaem",
+          "url": "podarochnye-nabory-s-chaem",
           "product": [
             {
               "page": "1109744",
@@ -75369,7 +75369,7 @@
           },
           "page_id": "1112128",
           "name": "Наборы шоколада ",
-          "uri": "shokoladnye-nabory-s-logotipom",
+          "url": "shokoladnye-nabory-s-logotipom",
           "product": [
             {
               "page": "1112128",
@@ -75559,7 +75559,7 @@
           },
           "page_id": "1112129",
           "name": "Снеки, орехи, сухофрукты",
-          "uri": "orekhi-iagody-sukhofrukty-s-logotipom",
+          "url": "orekhi-iagody-sukhofrukty-s-logotipom",
           "product": [
             {
               "page": "1112129",
@@ -75625,7 +75625,7 @@
           },
           "page_id": "1109697",
           "name": "Подарочные наборы с вареньем",
-          "uri": "podarochnye-nabory-s-varenem",
+          "url": "podarochnye-nabory-s-varenem",
           "product": [
             {
               "page": "1109697",
@@ -75767,7 +75767,7 @@
           },
           "page_id": "1112131",
           "name": "Конфеты, сладости, печенье",
-          "uri": "ledentsy-s-logotipom",
+          "url": "ledentsy-s-logotipom",
           "product": [
             {
               "page": "1112131",
@@ -75945,7 +75945,7 @@
           },
           "page_id": "1112130",
           "name": "Наборы специй ",
-          "uri": "nabory-spetsii-s-logotipom",
+          "url": "nabory-spetsii-s-logotipom",
           "product": [
             {
               "page": "1112130",
@@ -76059,7 +76059,7 @@
           },
           "page_id": "1109696",
           "name": "Подарочные наборы с медом",
-          "uri": "podarochnye-nabory-s-medom",
+          "url": "podarochnye-nabory-s-medom",
           "product": [
             {
               "page": "1109696",
@@ -76305,7 +76305,7 @@
           },
           "page_id": "1109745",
           "name": "Подарочные наборы с кофе",
-          "uri": "podarochnye-nabory-s-kofe",
+          "url": "podarochnye-nabory-s-kofe",
           "product": [
             {
               "page": "1109745",
@@ -76447,7 +76447,7 @@
           },
           "page_id": "1112196",
           "name": "Оливковое масло",
-          "uri": "olivkovoe-maslo",
+          "url": "olivkovoe-maslo",
           "product": [
             {
               "page": "1112196",
@@ -76519,13 +76519,13 @@
       },
       "page_id": "1111935",
       "name": "Спорт, отдых, туризм",
-      "uri": "sportivnye-tovary",
+      "url": "sportivnye-tovary",
       "img": "/assets/img/svg-icon/item14.svg",
       "page": [
         {
           "page_id": "11119123434",
           "name": "Защита здоровья",
-          "uri": "sport-hit",
+          "url": "sport-hit",
           "product": [
             {
               "page": "000000168",
@@ -76588,7 +76588,7 @@
           },
           "page_id": "1108633",
           "name": "Медали",
-          "uri": "nagradnye-medali",
+          "url": "nagradnye-medali",
           "product": [
             {
               "page": "1108633",
@@ -76714,7 +76714,7 @@
           },
           "page_id": "1106765",
           "name": "Наградные плакетки и панно",
-          "uri": "nagrady-plaketki",
+          "url": "nagrady-plaketki",
           "product": [
             {
               "page": "1106765",
@@ -76796,7 +76796,7 @@
           },
           "page_id": "1113087",
           "name": "Значки и флаги",
-          "uri": "znachki-i-flagi",
+          "url": "znachki-i-flagi",
           "product": [
             {
               "page": "1113087",
@@ -76830,7 +76830,7 @@
           },
           "page_id": "1111941",
           "name": "Кубки",
-          "uri": "nagradnye-kubki",
+          "url": "nagradnye-kubki",
           "product": [
             {
               "page": "1111941",
@@ -76920,7 +76920,7 @@
           },
           "page_id": "1108632",
           "name": "Наградные стелы",
-          "uri": "nagrady-nagradnye-stely",
+          "url": "nagrady-nagradnye-stely",
           "product": [
             {
               "page": "1108632",
@@ -77330,7 +77330,7 @@
           },
           "page_id": "1112317",
           "name": "Складные ножи ",
-          "uri": "skladnye-nozhi",
+          "url": "skladnye-nozhi",
           "product": [
             {
               "page": "1112317",
@@ -77620,7 +77620,7 @@
           },
           "page_id": "1106904",
           "name": "Подушки под шею",
-          "uri": "s-podushki-pod-sheyu",
+          "url": "s-podushki-pod-sheyu",
           "product": [
             {
               "page": "1106904",
@@ -77718,7 +77718,7 @@
           },
           "page_id": "1105724",
           "name": "Товары для путешествий",
-          "uri": "otdyh-dorojnye-aksessuary",
+          "url": "otdyh-dorojnye-aksessuary",
           "product": [
             {
               "page": "1105724",
@@ -77940,7 +77940,7 @@
           },
           "page_id": "1108978",
           "name": "Банные принадлежности",
-          "uri": "s-bannye-nabory-dlya-mujchin",
+          "url": "s-bannye-nabory-dlya-mujchin",
           "product": [
             {
               "page": "1108978",
@@ -78042,7 +78042,7 @@
           },
           "page_id": "1111862",
           "name": "Оптические приборы",
-          "uri": "opticheskie-pribory",
+          "url": "opticheskie-pribory",
           "product": [
             {
               "page": "1111862",
@@ -78280,7 +78280,7 @@
           },
           "page_id": "1105723",
           "name": "Наборы для пикника и барбекю ",
-          "uri": "otdyh-nabory-dlya-piknika",
+          "url": "otdyh-nabory-dlya-piknika",
           "product": [
             {
               "page": "1105723",
@@ -78530,7 +78530,7 @@
           },
           "page_id": "1105716",
           "name": "Инструменты",
-          "uri": "dom-instrumenty",
+          "url": "dom-instrumenty",
           "product": [
             {
               "page": "1105716",
@@ -78672,7 +78672,7 @@
           },
           "page_id": "1106109",
           "name": "Туристические принадлежности",
-          "uri": "otdyh-turisticheskiye-prinadlezhnosti",
+          "url": "otdyh-turlsticheskiye-prinadlezhnosti",
           "product": [
             {
               "page": "1106109",
@@ -78882,7 +78882,7 @@
           },
           "page_id": "1108937",
           "name": "Подарки для дачи",
-          "uri": "podarki-dlya-dachi",
+          "url": "podarki-dlya-dachi",
           "product": [
             {
               "page": "1108937",
@@ -79020,7 +79020,7 @@
           },
           "page_id": "1106824",
           "name": "Светодиодные фонарики",
-          "uri": "s-svetodiodnye-fonariki",
+          "url": "s-svetodiodnye-fonariki",
           "product": [
             {
               "page": "1106824",
@@ -79178,7 +79178,7 @@
           },
           "page_id": "1105850",
           "name": "Пляжный отдых",
-          "uri": "otdyh-plyajnyy-otdyh",
+          "url": "otdyh-plyajnyy-otdyh",
           "product": [
             {
               "page": "1105850",
@@ -79500,7 +79500,7 @@
           },
           "page_id": "1105718",
           "name": "Автомобильные аксессуары",
-          "uri": "otdyh-avtoprinadlejnosti",
+          "url": "otdyh-avtoprinadlejnosti",
           "product": [
             {
               "page": "1105718",
@@ -79762,7 +79762,7 @@
           },
           "page_id": "1105721",
           "name": "Игры и головоломки",
-          "uri": "otdyh-igry",
+          "url": "otdyh-igry",
           "product": [
             {
               "page": "1105721",
@@ -80100,7 +80100,7 @@
           },
           "page_id": "1105722",
           "name": "Мультитулы ",
-          "uri": "multituly",
+          "url": "multituly",
           "product": [
             {
               "page": "1105722",
@@ -80334,7 +80334,7 @@
           },
           "page_id": "1111936",
           "name": "Спортивные аксессуары ",
-          "uri": "sportivnye-aksessuary",
+          "url": "sportivnye-aksessuary",
           "product": [
             {
               "page": "1111936",
@@ -80656,7 +80656,7 @@
           },
           "page_id": "1112327",
           "name": "Самокаты и гироскутеры",
-          "uri": "samokaty-i-giroskutery",
+          "url": "samokaty-i-giroskutery",
           "product": [
             {
               "page": "1112327",
@@ -80718,7 +80718,7 @@
           },
           "page_id": "1111929",
           "name": "Спортивные шейкеры",
-          "uri": "sportivnye-sheykery",
+          "url": "sportivnye-sheykery",
           "product": [
             {
               "page": "1111929",
@@ -80984,7 +80984,7 @@
           },
           "page_id": "1109465",
           "name": "Мячи ",
-          "uri": "myachi-s-logotipom",
+          "url": "myachi-s-logotipom",
           "product": [
             {
               "page": "1109465",
@@ -81118,7 +81118,7 @@
           },
           "page_id": "1112199",
           "name": "Велосипедные аксессуары",
-          "uri": "velosipednye-aksessuary",
+          "url": "velosipednye-aksessuary",
           "product": [
             {
               "page": "1112199",
@@ -81240,7 +81240,7 @@
           },
           "page_id": "1111931",
           "name": "Фитнес подарки ",
-          "uri": "tovary-dlya-fitnesa",
+          "url": "tovary-dlya-fitnesa",
           "product": [
             {
               "page": "1111931",
@@ -81342,7 +81342,7 @@
           },
           "page_id": "1111934",
           "name": "Спортивный инвентарь ",
-          "uri": "sportivnyi-inventar",
+          "url": "sportivnyi-inventar",
           "product": [
             {
               "page": "1111934",
@@ -81567,7 +81567,7 @@
     {
       "page_id": "1111935",
       "name": "Эко подарки",
-      "uri": "sportivnye-tovary",
+      "url": "sportivnye-tovary",
       "img": "/assets/img/svg-icon/item17.svg",
       "dis": false,
       "page": []
