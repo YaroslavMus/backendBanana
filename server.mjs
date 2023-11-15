@@ -37,7 +37,6 @@ function extractAllProducts(pages) {
   }, []);
   return allProducts;
 }
-myDailyFunction();
 // Поиск элемента по ID
 app.get('/itemProduct', async (req, res) => {
   const itemProduct = String(req.query.itemID);
