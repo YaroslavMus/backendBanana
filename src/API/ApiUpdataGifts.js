@@ -9,8 +9,7 @@ const apiUrlGifts = `https://${config.GIFTS_API_KEY}@api2.gifts.ru/export/v2/cat
 const parser = new xml2js.Parser({
   explicitArray: false,
 });
-const urlFile= "./bd/gifts2.json"
-
+const urlFile = './bd/gifts2.json';
 
 async function fetchAndSaveXML() {
   try {
@@ -51,7 +50,6 @@ async function processFilePart1() {
 
         return item;
       } else if (item.product && !Array.isArray(item.product)) {
-        // Если item.product существует и не является массивом
         const prodMain = {
           name: item.product_size,
           stok: null,
@@ -103,6 +101,16 @@ async function processFilePart2() {
       delete item.product_attachment;
       delete item.status;
       return item;
+    });
+    updatedProducts.forEach((item) => {
+      if (item.image) {
+        item.image = item.image.map((obj) => {
+          if (obj !== undefined) {
+            return obj.replace(/thumbnails\/\d+\//, '/images/');
+          }
+          return obj;
+        });
+      }
     });
 
     await fs.writeFile(urlFile, JSON.stringify(updatedProducts, null, 2));
@@ -169,6 +177,7 @@ async function processFilePart3() {
       };
       mergedData.push(mergedItem);
     });
+
     await fs.writeFile('./bd/gifts2.json', JSON.stringify(mergedData, null, 2));
     console.log('JSON-файл обновлен на основе обработанных данных из третьей части.');
   } catch (error) {
@@ -185,4 +194,3 @@ export async function getDataGltf() {
 
   await processFilePart3();
 }
-  
